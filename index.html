@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Title</title>
+</head>
+<body>
+    <!-- Aufgabe 1 -->
+    <section>
+        <form onsubmit="return false">
+            <input type="number" name="zahl" id="zahl">
+            <input onclick="verdoppeln()" type="submit" value="Verdoppel mich">
+        </form>
+
+        <p id="ergebnis"> </p>
+    </section>
+
+    <!-- Aufgabe 2 -->
+    <section>
+        <h3>Gib dein Geburtsjahr ein</h3>
+        <form onsubmit="return false">
+            <input type="number" name="jahr" id="jahr">
+            <input id="button" type="submit" value="Berechne mein Alter">
+        </form>
+
+        <p id="result"> </p>
+    </section>
+
+    <!-- Aufgabe 3 -->
+    <section>
+        <form onsubmit="return false" class="shortForm">
+            <label for="alterEins">Alter 1</label>
+            <input class="short" type="number" name="alterEins" id="alterEins">
+            <label for="alterZwei">Alter 2</label>
+            <input class="short" type="number" name="alterZwei" id="alterZwei">
+            <input id="nochEinButton" type="submit" value="Berechne!">
+        </form>
+
+        <p>Die Differenz ist:</p>
+        <p id="differenz"> </p>
+    </section>
+
+    <!-- Aufgabe 4 -->
+    <section class="bunt">
+        <h2>Counter</h2>
+        <h3 id="nextResult">0</h3>
+        <form onsubmit="return false">
+            <input id="plusEins" type="submit" value="+1">
+            <input id="minusEins" type="submit" value="-1">
+            <input id="plusZehn" type="submit" value="+10">
+            <input id="minusZehn" type="submit" value="-10">
+            <input id="plusHundert" type="submit" value="+100">
+            <input id="minusHundert" type="submit" value="-100">
+            <input id="reset" type="submit" value="Reset">
+            <input id="malZwei" type="submit" value="*2">
+        </form>
+    </section>
+
+    <!-- Aufgabe 5 -->
+    <section>
+        <h1 id="headline" class="optionEins">Ich bin eine Überschrift</h1>
+        <button id="switchButton">Versuch's mal hiermit</button>
+        <button id="resetButton">Doch nicht.</button>
+    </section>
+
+    
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

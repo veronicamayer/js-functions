@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+
+section {
+    padding: 3vh 1vw;
+    border: 1px dotted lightgrey;
+    border-radius: 10px;
+    margin: 2vh 2vw;
+}
+
+input {
+    margin: 1vh 0;
+    display: inline;
+}
+
+label {
+    display: inline;
+}
+
+.short {
+    width: 100px;
+}
+
+.shortForm {
+    width: 150px;
+}
+
+.bunt {
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.bunt form {
+    width: 110px;
+    margin: auto;
+}
+
+.bunt input {
+    width: 50px;
+}
+
+.bunt h3 {
+    margin: 3vh;
+}
+
+.optionEins {
+    color: black;
+}
+
+.optionZwei {
+    color: pink;
+}
+
