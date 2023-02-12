@@ -30,7 +30,7 @@ const nochEinButton = document.getElementById('nochEinButton');
 nochEinButton.addEventListener('click', getDifferenz);
 
 function getDifferenz () {
-    const nochEinErgebnis = alterEins.value - alterZwei.value;
+    const nochEinErgebnis = Math.abs(alterEins.value - alterZwei.value);
     console.log(nochEinErgebnis);
     differenz.innerHTML = nochEinErgebnis;
 }
@@ -93,11 +93,11 @@ let headline = document.getElementById("headline");
 let switchButton = document.getElementById("switchButton");
 let resetButton = document.getElementById("resetButton");
 
-switchButton.addEventListener("click", function() {
+switchButton.addEventListener("click", () =>  {
 headline.classList.add("optionZwei");
 });
 
-resetButton.addEventListener("click", function() {
+resetButton.addEventListener("click", () =>  {
 headline.classList.remove("optionZwei");
 headline.classList.add("optionEins");
 });
